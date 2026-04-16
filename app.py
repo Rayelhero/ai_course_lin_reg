@@ -7,7 +7,7 @@ import statsmodels.api as sm
 
 app = FastAPI()
 from pathlib import Path
-p = Path("14_N8N/results.pkl")  # Voll relativ zu /app
+p = Path("results.pkl")  # Voll relativ zu /app
 print(f"Suche Modell in: {p.absolute()}")  # Debug-Log
 if p.exists():
     model
